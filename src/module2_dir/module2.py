@@ -1,7 +1,19 @@
+"""
+EXAMPLE MODULE
+DISCARD THIS FOR YOUR PROJECT AND CREATE YOUR OWN MODULES ACCORDING TO YOUR NEEDS
+
+This module provides a 'sum' function to perform addition of two numbers
+represented as strings. Before addition, input strings are converted
+for numbers formatted using the 'format_number()' function of the 'utils.utils' module.
+
+Author: Filipe de Souza Martins
+Date: January 27, 2024
+"""
+
 from utils.utils import format_number
 
 
-def soma(x: str, y: str) -> float:
+def sum_numbers(x: str, y: str) -> float:
     """
     Realiza a soma de dois números representados como strings.
 
@@ -20,15 +32,15 @@ def soma(x: str, y: str) -> float:
     69.12
     """
 
-    x = format_number(x)
-    y = format_number(y)
+    x_float = format_number(x)
+    y_float = format_number(y)
 
-    return x + y
+    return x_float + y_float
 
 
 if __name__ == '__main__':
-    print(soma('R$2.500', 'R$2.500'))
-    print(soma('R$ 2.500', 'R$ 2.500'))
-    print(soma('USD2.500', 'USD 2.500'))
-    print(soma('2.500', 'R$2.500'))
-    print(soma('2500', '2500'))
+    print(sum_numbers('R$1.500', 'R$1.500'))
+    print(sum_numbers('R$ 1.500', 'R$ 1.500'))
+    print(sum_numbers('USD1.500', 'USD 1.500'))
+    print(sum_numbers('1.500', 'R$1500'))
+    print(sum_numbers('1500', '1500'))
