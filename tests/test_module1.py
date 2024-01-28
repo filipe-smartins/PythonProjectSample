@@ -1,5 +1,9 @@
-from src.module1_dir.module1 import print_lower_name, print_upper_name, print_capitalized_name
 from settings.settings import name
+from src.module1_dir.module1 import (
+    print_capitalized_name,
+    print_lower_name,
+    print_upper_name,
+)
 
 
 def test_print_lower_name():
@@ -11,4 +15,7 @@ def test_print_upper_name():
 
 
 def test_print_capitalized_name():
-    assert print_capitalized_name(name) == 'Your capitalized name is: Filipe martins'
+    assert (
+        print_capitalized_name(name)
+        == 'Your capitalized name is: Filipe martins'
+    )

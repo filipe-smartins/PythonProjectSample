@@ -1,4 +1,4 @@
-from utils.utils import capitalized_name, upper_name, lower_name, format_number
+from utils.utils import capitalized_name, format_number, lower_name, upper_name
 
 
 def test_capitalized_name():
@@ -36,4 +36,3 @@ def test_format_number():
     assert format_number('USD2.500') == 2500.0
     assert format_number('EUR 2.500') == 2500.0
     assert format_number('2500') == 2500.0
-
