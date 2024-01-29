@@ -8,49 +8,7 @@ This is a template for a Python project with basic directories and file examples
 
 ## Structure
 
-project/
-│
-├── src/                This directory contains the actual source code of your application.
-│   ├── __init__.py     This file indicates that the directory should be treated as a Python package.
-│   ├── module1_dir/        Module of your application.
-│   │    ├── module1.py  Module file of your application.
-│   │
-│   ├── module2_dir/
-│   │    ├── module2.py
-│   │
-│   └── main.py
-│
-├── tests/              This directory contains unit tests for your code.
-│   ├── __init__.py
-│   ├── test_module1.py Test file for the corresponding modules in src.
-│   ├── test_module2.py
-│   └── test_utils.py
-│  
-├── settings/           Configuration settings for your project.
-│   ├── __init__.py  
-│   ├── .env            Environment variable file. Make sure the name ".env" in on .gitignore file.
-│   └── settings.py     Settings module.
-│
-├── utils/              Utility functions for your project.
-│   ├── __init__.py
-│   └── utils.py        Utility functions.
-│
-├── scripts/
-│   ├── __init__.py
-│   ├── run_tests.bat
-│   └── run_tests.sh
-│
-├── docs/               This directory contains the project documentation.
-│   ├── conf.py         
-│   └── index.md        This file provides more extensive project documentation
-│
-├── data/               This directory stores data or files required for your code to read or manipulate during execution.
-│
-├── tox.ini             Configuration file for tox.
-├── requirements.txt    Lists the dependencies of your project. Can be used with tools like pip to install all necessary dependencies.
-├── LICENSE.txt         Choose a license that aligns with your desired code terms. You can find some options on https://choosealicense.com/
-├── README.md           Documentation that provides a quick overview of your project.
-└── .gitignore          List of files/directories that Git should ignore.
+<img src="docs/source/project_structure.png" alt="structure"/>
 
 
 ## Information
