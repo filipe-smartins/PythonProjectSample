@@ -12,6 +12,8 @@ Date: January 27, 2024
 
 from utils.utils import format_number
 
+from src.logger import logger
+
 
 def sum_numbers(x: str, y: str) -> float:
     """
@@ -32,10 +34,18 @@ def sum_numbers(x: str, y: str) -> float:
     69.12
     """
 
+    logger.info(f'Starting print_capitalized_name with name {x} {y}')
+
+    logger.info(f'Converting variables x and y to float')
+
     x_float = format_number(x)
     y_float = format_number(y)
 
-    return x_float + y_float
+    result = x_float + y_float
+
+    logger.info(f'Function generated the following result: {result}')
+
+    return result
 
 
 if __name__ == '__main__':

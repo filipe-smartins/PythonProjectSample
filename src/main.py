@@ -11,6 +11,7 @@ Date: January 27, 2024
 """
 
 from settings.settings import name
+
 from src.module1_dir.module1 import (
     print_capitalized_name,
     print_lower_name,

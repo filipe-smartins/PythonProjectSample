@@ -11,6 +11,8 @@ Date: January 27, 2024
 from settings.settings import name
 from utils.utils import capitalized_name, lower_name, upper_name
 
+from src.logger import logger
+
 
 def print_lower_name(name_to_print: str) -> str:
     """
@@ -22,8 +24,13 @@ def print_lower_name(name_to_print: str) -> str:
     Returns:
     - str: A formatted string indicating the lowercase version of the input name.
     """
+    logger.info(f'Starting print_lower_name with name {name_to_print}')
 
-    return f'Your lower name is: {lower_name(name_to_print)}'
+    result = lower_name(name_to_print)
+
+    logger.info(f'Function generated the following result: {result}')
+
+    return f'Your lower name is: {result}'
 
 
 def print_upper_name(name_to_print: str) -> str:
@@ -37,7 +44,13 @@ def print_upper_name(name_to_print: str) -> str:
     - str: A formatted string indicating the uppercase version of the input name.
     """
 
-    return f'Your upper name is: {upper_name(name_to_print)}'
+    logger.info(f'Starting print_upper_name with name {name_to_print}')
+
+    result = upper_name(name_to_print)
+
+    logger.info(f'Function generated the following result: {result}')
+
+    return f'Your upper name is: {result}'
 
 
 def print_capitalized_name(name_to_print: str) -> str:
@@ -51,7 +64,13 @@ def print_capitalized_name(name_to_print: str) -> str:
     - str: A formatted string indicating the capitalized version of the input name.
     """
 
-    return f'Your capitalized name is: {capitalized_name(name_to_print)}'
+    logger.info(f'Starting print_capitalized_name with name {name_to_print}')
+
+    result = capitalized_name(name_to_print)
+
+    logger.info(f'Function generated the following result: {result}')
+
+    return f'Your capitalized name is: {result}'
 
 
 if __name__ == '__main__':
