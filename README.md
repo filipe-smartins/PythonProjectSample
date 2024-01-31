@@ -11,35 +11,30 @@ This is a template for a Python project with basic directories and file examples
 <img src="docs/source/project_structure.png" alt="structure"/>
 
 
-## Information
+## How to use this Python Project Template
 
-## .env file
+## ON PRODUCTION
 
-Take a look at the .env_example file and change its name to .env
+### .env file
 
-The .env file is often used to store environment variables in a project. Environment variables are values external to the source code that can be used by the application. Store sensitive data and settings in this file that others outside the local scope should not have access to.
+Take a look at the .env_example file and implement your own .env file.
 
-Examples:
-
-Sensitive Data and Settings:
-Store API keys, passwords, access tokens, and other sensitive information that should not be included directly in the source code.
-
-Environment Settings:
-Define environment-specific settings, such as the URL of a development, test, or production database.
-
-Configuration Parameters:
-Configure application parameters that may vary between different environments (development, test, production).
-
-Activation/Deactivation of Features:
-Control the activation or deactivation of specific application features or functionalities.
+The .env file is often used to store environment variables with sensitive information that should not be included directly in the source code. Store sensitive data and settings in this file that others outside the local scope should not have access to. Example: API keys, passwords, access tokens, URL of a development, test, or production database, etc.
 
 Make sure the name ".env" in on your .gitignore file.
 
-## dotenv library
+### dotenv library
 
 The dotenv library is used to load the .env file for the environment variables so that they can be captured by the system.
 This library is used in the settings.py file, where you can find an example of its use.
 
+### Logging
+
+This project includes a configured log file. We use the built-in logging library to generate logs.
+Logs are written to the data/logs folder.
+You can check examples of logging usage in the src/ folder.
+
+## ON DEVELOPMENT
 
 ## Tests and Code Quality
 
