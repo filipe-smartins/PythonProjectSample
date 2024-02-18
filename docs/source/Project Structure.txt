@@ -2,10 +2,10 @@ project/
 │
 ├── src/                	This directory contains the actual source code of your application.
 │   ├── __init__.py     	This file indicates that the directory should be treated as a Python package.
-│   ├── module1_dir/        	
+│   ├── module1/        	
 │   │    └── module1.py  	Module file of your application.
 │   │
-│   ├── module2_dir/
+│   ├── module2/
 │   │    └── module2.py		Module file of your application.
 │   │
 │   ├── logger.py		File containing code related to logging.
@@ -14,8 +14,12 @@ project/
 │
 ├── tests/              	This directory contains unit tests for your code.
 │   ├── __init__.py
-│   ├── test_module1.py 	Test file for the corresponding modules in src.
-│   ├── test_module2.py		Test file for the corresponding modules in src.
+│   ├── module1/        	Tests for the corresponding modules in src.
+│   │    └── test_module1.py
+│   │
+│   ├── module2/        	Tests for the corresponding modules in src.
+│   │    └── test_module2.py
+│   │
 │   └── test_utils.py		Test file for the corresponding modules in utils.
 │  
 ├── settings/           	Configuration settings for your project.
@@ -35,10 +39,11 @@ project/
 │
 ├── docs/               	This directory contains the project documentation.
 │   ├── conf.py         
-│   └── index.md        	This file provides more extensive project documentation
+│   ├── index.md        	This file provides more extensive project documentation
+│   └── source/
 │
 ├── data/               	This directory stores data or files required for your code to read or manipulate during execution.
-│   └── logs
+│   └── logs/
 │        └── log.log		Log file
 │
 ├── tox.ini             	Configuration file for tox.

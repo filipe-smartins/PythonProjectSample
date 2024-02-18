@@ -12,12 +12,12 @@ Date: January 27, 2024
 
 from settings.settings import name
 
-from src.module1_dir.module1 import (
+from src.module1.module1 import (
     print_capitalized_name,
     print_lower_name,
     print_upper_name,
 )
-from src.module2_dir.module2 import sum_numbers
+from src.module2.module2 import sum_numbers
 
 if name is not None:
     print('Your name is: ', name)

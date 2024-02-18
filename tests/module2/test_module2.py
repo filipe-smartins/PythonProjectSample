@@ -1,4 +1,4 @@
-from src.module2_dir.module2 import sum_numbers
+from src.module2.module2 import sum_numbers
 
 
 def test_soma():

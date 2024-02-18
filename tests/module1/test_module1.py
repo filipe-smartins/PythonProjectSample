@@ -1,5 +1,5 @@
 from settings.settings import name
-from src.module1_dir.module1 import (
+from src.module1.module1 import (
     print_capitalized_name,
     print_lower_name,
     print_upper_name,

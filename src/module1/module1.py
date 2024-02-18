@@ -77,5 +77,8 @@ if __name__ == '__main__':
 
     if name is not None:
         print(name)
+        print(print_lower_name(name))
+        print(print_upper_name(name))
+        print(print_capitalized_name(name))
     else:
         print('Name is None')
