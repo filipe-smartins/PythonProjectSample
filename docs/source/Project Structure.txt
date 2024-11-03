@@ -46,6 +46,8 @@ project/
 │   └── logs/
 │        └── log.log		Log file
 │
+├── media/               	This directory stores user-uploaded files. It's commonly used in Django Framework.
+│
 ├── tox.ini             	Configuration file for tox.
 ├── requirements.txt    	Lists the dependencies of your project in production.
 ├── requirements-dev.txt    	Lists the dependencies of your project in dev.
