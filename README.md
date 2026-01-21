@@ -17,7 +17,7 @@ This is a template for a Python project with basic directories and file examples
 
 ### .env file
 
-Take a look at the .env_example file and implement your own .env file.
+Take a look at the .env.example file and implement your own .env file.
 
 The .env file is often used to store environment variables with sensitive information that should not be included directly in the source code. Store sensitive data and settings in this file that others outside the local scope should not have access to. Example: API keys, passwords, access tokens, URL of a development, test, or production database, etc.
 
@@ -146,12 +146,12 @@ You can run the linter check by running the following command (run the command f
 
 On Windows:
 ```bash
-.\scripts\run_linter.bat
+.\scripts\run_linters.bat
 ```
 
 On Linux
 ```bash
-.\scripts\run_linter.sh
+.\scripts\run_linters.sh
 ```
 
 You can also run the linter check with the command below (run the command from the .\src directory):
